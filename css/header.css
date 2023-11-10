@@ -1,0 +1,259 @@
+.header {
+    margin: 0px auto;
+    padding: 20px 20px;
+    padding-top: 40px;
+    display: grid;
+    background-color: #1D1D1D;
+    text: white;
+    justify-content: space-evenly;
+    align-items: center;
+    grid-gap: 40px;
+    grid-template-columns: minmax(160px, auto) minmax(auto, 400px) minmax(270px, auto   );
+}
+
+
+.header a img {
+    /* width: 80px; */
+}
+
+
+
+.busca form {
+    display: grid;
+}
+
+.busca #s {
+    border: 2px solid #0000;
+    font-size: 1.125rem;
+    border-radius: 4px;
+    padding: 12px 40px 12px 20px;
+    grid-area: 1/1;
+}
+
+.busca #searchButton {
+    grid-area: 1/1;
+    width: 50px;
+    justify-self: end;
+    border: none;
+    cursor: pointer;
+    text-indent: -100px;
+    background: transparent url('../img/icons/search.svg')no-repeat center center;
+}
+
+
+
+.conta {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: auto auto;
+    
+}
+
+
+.conta-div {
+    display: grid;
+    grid-template-columns: minmax(15px, auto) minmax(30px, auto);
+    align-items: center;
+}
+
+.conta-div a, .carrinho-div a{ 
+    color: white;
+}
+
+.carrinho-div{
+    display: grid;
+    grid-template-columns: minmax(15px, auto) minmax(50px, auto);
+    align-items: center;
+}
+
+.carrinho-count {
+    display: block;
+    border-radius: 50%;
+    width: 24px;
+    height: 24px;
+    background: #FF7337;
+    font-size: 1rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.carrinho {
+    display: flex;
+    gap: 10px;
+}
+
+.carrinho p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+   
+.menu-categorias {
+    background-color: black;
+    padding: 5px;
+}
+.menu-categorias a {
+    color: white;
+    padding: 10px;
+}
+
+.menu-categorias ul {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    gap: 20px;
+}
+
+.menu-categorias ul li {
+    margin: 15px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.menu-categorias a:hover, .menu-categorias .current-menu-item a {
+    color: orange;
+}
+
+
+#cupom {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    background-color: rgb(233, 233, 233);
+    color: black;
+    text-align: center;
+    padding: 5px 0px;
+    font-size: 12px;
+    font-weight: 500;
+    z-index: 90;
+    
+}
+
+#cupom > span {
+    color: #FF7337;
+    font-weight: 600;
+}
+
+
+#logo-mobilee {
+    display: none;
+}
+
+#mobile-cart {
+    display: none;
+}
+
+
+@media (max-width: 800px) {
+    .header {
+        grid-template-columns: 1fr;
+        gap: 20px;
+        padding-top: 40px;
+    }
+
+    .header #logo-deskt {
+        display: none;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #logo-mobilee {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        left: 0;
+        right: 50%;
+        width: 100%;
+    }
+
+    #logo-mobilee > img {
+        width: 80px;
+    }
+
+    .busca {
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .conta {
+        justify-content: space-between;
+        display: flex;
+        gap: 40px;
+        order: 1;
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    .conta-div{
+    /* grid-template-columns: minmax(15px, 40px) minmax(30px, 100px); */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        z-index: 51;
+    }
+
+    .conta-div #account {
+        display: block;
+    }
+
+    .conta-div #account > img {
+        width: 28px;
+    }
+
+    .conta-div > .minha-conta {
+        display: none;
+    }
+
+   
+    .conta-div > img {
+        width: 30px;
+    }
+
+    .carrinho-div {
+    /* grid-template-columns: minmax(15px, 40px) minmax(30px, 100px); */
+        display: flex;
+        z-index: 50;
+    }
+
+    .carrinho-div :first-child{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #mobile-cart {
+        display: flex;
+    }
+
+    .carrinho-div :first-child > img {
+        width: 30px;
+    }
+
+    .carrinho-div .carrinho {
+        display: none;
+    }
+
+    .menu-categorias {
+        position: relative;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: -ms-autohiding-scrollbar;
+    }
+
+    .menu-categorias ul {
+        justify-content: initial;
+        gap: 40px;
+        padding-left: 20px;
+    }
+
+    
+   
+  
+}

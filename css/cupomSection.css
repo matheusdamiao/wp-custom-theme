@@ -1,0 +1,92 @@
+.cupom-wrapper{
+    position: relative;
+    background-color: black;
+    height: 100%;
+    min-height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cupom-wrapper img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+
+.cupom-text span {
+    color: #FF7337;
+    width: 200px;
+    height: 5px;
+}
+
+.cupom-text h2 {
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 400;
+    color: #FF7337;
+    text-transform: uppercase;
+    font-size: 80px;
+    text-align: center;
+}
+
+.cupom-text h2 > span {
+    color: white;
+    font-size: 50px;
+}
+
+.cupom-text h3 {
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 200;
+    color: white;
+    text-transform: uppercase;
+    font-size: 32px;
+}
+
+
+.cupom-text a {
+    max-width: 300px;
+    text-transform: uppercase;
+    padding: 15px 25px;
+    font-weight: 200;
+    font-size: 24px;
+    color: #1D1D1D;
+    background-color: #FF7337;
+    font-family: 'Londrina Solid', cursive;
+    cursor: pointer;
+    border: none;
+}
+
+
+.cupom-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    z-index: 999;
+}   
+
+
+@media screen and (max-width: 1000px) {
+    
+
+    .cupom-text {
+        padding: 0px 20px;
+    }
+
+    .cupom-text h2 {
+        font-size: 50px;
+    }
+
+    .cupom-text h2 > span{
+        font-size: 32px;
+    }
+
+    .cupom-text h3 {
+        font-size: 24px;
+    }
+}

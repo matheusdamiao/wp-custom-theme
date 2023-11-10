@@ -1,0 +1,15 @@
+/* 
+    Theme name: BeBasic Theme
+*/
+
+@import './css/base.css';
+@import './css/header.css';
+@import './css/home.css';
+@import './css/products.css';
+@import './css/footer.css';
+@import './css/product.css';
+@import './css/woocommerce.css';
+@import './css/artesanalSection.css';
+@import './css/clientesSection.css';
+@import './css/cupomSection.css';
+
